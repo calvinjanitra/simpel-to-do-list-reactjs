@@ -4,11 +4,7 @@ import TodoList from "../todo-list/todolist";
 import TodoCreate from "../todo-create/todocreate";
 
 const Todo = () => {
-    const [getTodos, setTodos] = useState([
-        { id: 1, title: "Eat" },
-        { id: 2, title: "Sleep" },
-        { id: 3, title: "Code" },
-    ]);
+    const [getTodos, setTodos] = useState([]);
 
     const eventCreateTodo = (todo) => {
         setTodos(getTodos.concat(todo));
